@@ -8,7 +8,7 @@ Math: inline `$…$` becomes Unicode text (`latex.lua`); `$$…$$` and ```` ```m
 
 Rendering is split by job: `render.lua` (blocks), `inline.lua` (inline text, wrap), `code.lua` (code panels, diagrams), `media.lua` (images), `latex.lua` (math). The renderer starts on `:Vellum`; the PNG cache is capped at 100 MB.
 
-Resizing the pane stays smooth. The renderer restarts after a crash. `nvim --clean -l test/run.lua`: 142 checks green.
+Resizing the pane stays smooth. The renderer restarts after a crash. MDX buffers (`.mdx`, filetype `mdx` or `markdown.mdx`) preview, export and follow like markdown (`mdx.lua`). `nvim --clean -l test/run.lua`: 154 checks green.
 
 ## What's next
 
